@@ -32,7 +32,7 @@ jobs:
 #        env:
 #          MY_ENV_VAR: value-for-my-env-var
 #          MY_SECRET_ENV_VAR: ${{ secrets.MY_SECRET }} # here you can find information how to create secrets: https://docs.github.com/en/actions/security-guides/encrypted-secrets
-        run: source services/c1_env/bin/activate && python services/api.py
+        run: source services/c1_env/bin/activate && pip install -r requirements.txt && python services/api.py
        
 
 # Please do not touch the following action
